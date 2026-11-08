@@ -428,19 +428,26 @@
     :root{
       --bg: #f3efe4;
       --bg-soft: #fffdf5;
-      --ink: #25321f;
-      --ink-dim: #5c6a58;
-      --accent: #97762f;
-      --accent-dim: rgba(151,118,47,.4);
-      --rule: rgba(37,50,31,0.16);
+      --ink: #22301c;
+      --ink-dim: #43523c;
+      --accent: #86661f;
+      --accent-dim: rgba(134,102,31,.5);
+      --rule: rgba(37,50,31,0.3);
     }
     html{ background: #f3efe4; }
     .bg-layer{
       background: linear-gradient(180deg, #f8f5ea 0%, #edf0df 100%);
       animation: none;
     }
-    .share-pill{ background: rgba(37,50,31,0.05); border-color: rgba(37,50,31,0.08); }
-    .qa2 p{ background: rgba(37,50,31,0.05); }
+    .share-pill{ background: rgba(37,50,31,0.06); border-color: rgba(37,50,31,0.14); }
+    .qa2 p{ background: rgba(37,50,31,0.06); }
+    .avatar{
+      background: #fffdf5;
+      border: 1.5px solid rgba(134,102,31,0.65);
+      box-shadow: 0 1px 6px rgba(37,50,31,0.15);
+      animation: none;
+    }
+    .avatar::after{ display: none; }
   }
 </style>
 </head>
