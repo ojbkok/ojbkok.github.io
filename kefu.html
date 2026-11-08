@@ -8,7 +8,8 @@
 <meta name="description" content="藏寶閣：海外賬號（Telegram、推特、Google、Facebook、Apple ID）、科學上網與 eSIM 一站式導航，自動發貨，客服在線支援。">
 <meta name="keywords" content="海外賬號,科學上網,eSIM,Telegram賬號,Apple ID,藏寶閣">
 <link rel="canonical" href="https://ojbk.fyi/">
-  <meta name="theme-color" content="#12331f">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#12331f">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f3efe4">
   <link rel="manifest" href="/manifest.json">
   <link rel="apple-touch-icon" href="/icon-192.png">
   <meta name="mobile-web-app-capable" content="yes">
@@ -421,6 +422,26 @@
   .chat.flash{ animation: boxFlash 0.9s ease-in-out 4; }
   @keyframes boxFlash{ 0%,100%{ box-shadow:0 8px 30px rgba(0,0,0,0.45); } 50%{ box-shadow:0 0 0 3px rgba(196,160,106,0.75), 0 0 24px rgba(196,160,106,0.55); } }
   @media (prefers-reduced-motion: reduce){ .chat-fab.blink, .chat.flash{ animation:none; } }
+
+  /* ===== 浅色模式（跟随系统）：深色为默认，此处仅覆盖变量与背景层 ===== */
+  @media (prefers-color-scheme: light){
+    :root{
+      --bg: #f3efe4;
+      --bg-soft: #fffdf5;
+      --ink: #25321f;
+      --ink-dim: #5c6a58;
+      --accent: #97762f;
+      --accent-dim: rgba(151,118,47,.4);
+      --rule: rgba(37,50,31,0.16);
+    }
+    html{ background: #f3efe4; }
+    .bg-layer{
+      background: linear-gradient(180deg, #f8f5ea 0%, #edf0df 100%);
+      animation: none;
+    }
+    .share-pill{ background: rgba(37,50,31,0.05); border-color: rgba(37,50,31,0.08); }
+    .qa2 p{ background: rgba(37,50,31,0.05); }
+  }
 </style>
 </head>
 <body>
